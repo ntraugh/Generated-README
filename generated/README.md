@@ -1,5 +1,5 @@
-# ante
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Big project
+  [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause))
 
   ## Table of Contents
   - [Description](#-escription)
@@ -11,25 +11,25 @@
   - [Questions](#-Questions)
 
   ## Description
-  nate
+  It's a very large project with lots of people working on it
 
   ## Installation
-  nate
+  npm installer
 
   ## Usage
-  nate
+  use it however you see fit
 
   ## License
-  Apache 2.0
+  BSD 3-Clause
 
   ## Contributing
-  nate
+  me
 
   ## Tests
-  nate
+  me
 
   ## Questions
-  nate
+  What do you like?
 
   Contact Me:
 

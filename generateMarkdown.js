@@ -6,17 +6,17 @@ function renderLicenseBadge(license) {
   } else if (license === "GNU"){
     return "[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
   } else if (license === "MIT"){
-    return "[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT))"
+    return "[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
   } else if (license === "BSD 2-Clause"){
-    return "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause))"
+    return "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)"
   } else if (license === "BSD 3-Clause"){
-    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause))"
+    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
   } else if (license === "Boost Software License"){
     return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"
-  } else (license === "Creative Commons"){
+  } else (license === "Creative Commons")
     return "[![License](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)"
 
-}};
+};
 
 
 
@@ -43,7 +43,7 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  - [Description](#-escription)
+  - [Description](#-Description)
   - [Installation](#-Installation)
   - [Usage](#-Usage)
   - [License](#-License)
