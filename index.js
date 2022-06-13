@@ -67,13 +67,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "concerns",
-        message: "Enter any FAQ.",
-        validate: checkInput
-
-    },
-    {
-        type: "input",
         name: "github",
         message: "Enter your GitHub username.",
         validate: checkInput
@@ -101,9 +94,6 @@ function writeToFile(fileName, data) {
 function init() {
     // creating a prompt for the questions
     inquirer.prompt(questions).then((data) => {
-        console.log(JSON.stringify(data, null, " "));
-
-
         writeToFile("./generated/README.md", data);
     });
 

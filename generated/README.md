@@ -1,8 +1,8 @@
-# Big project
-  [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause))
+# Big Project
+  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
   ## Table of Contents
-  - [Description](#-escription)
+  - [Description](#-Description)
   - [Installation](#-Installation)
   - [Usage](#-Usage)
   - [License](#-License)
@@ -11,27 +11,24 @@
   - [Questions](#-Questions)
 
   ## Description
-  It's a very large project with lots of people working on it
+  This is a large project with a lot of information on it.
 
   ## Installation
-  npm installer
+  However you would like
 
   ## Usage
-  use it however you see fit
+  However you would like
 
   ## License
-  BSD 3-Clause
+  Boost Software License
 
   ## Contributing
-  me
+  I did
 
   ## Tests
-  me
+  Use any test parameters you would like
 
-  ## Questions
-  What do you like?
-
-  Contact Me:
+  ## Questions??
 
   [GitHub](https://github.com/ntraugh)
 
