@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
-const fs = require("fs")
-const inquirer = require("inquirer")
-const newMarkdown = require("./generateMarkdown")
+const fs = require("fs");
+const inquirer = require("inquirer");
+const newMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -55,3 +55,4 @@ function init() {}
 
 // Function call to initialize app
 init();
+
