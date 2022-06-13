@@ -13,8 +13,8 @@
   - [Contributing](#Contributing)
 
   - [Tests](#Tests)
-  
-  - [Questions](#Questions??)
+
+  - [Questions](#Questions)
 
   ## Description
   This project helps the user create their own README with prompts from the command line.
