@@ -47,7 +47,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Select a license for the project.",
-        choices: ["Apache 2.0", "GNU", "MIT", "BSD 2-Clause", "BSD 3-Clause", "Boost Software License", "Creative Commons", "Eclipse publice License", "Eclipse Public License", "GNU Affero General Public License", "GNU General public License v2.0", "GNU Lesser General public License", "Mozilla Public License 2.0", "The Unlicense"],
+        choices: ["Apache 2.0", "GNU", "MIT", "BSD 2-Clause", "BSD 3-Clause", "Boost Software License", "Creative Commons"],
         validate: checkInput
 
     },
