@@ -2,7 +2,9 @@
 
 ## Table of Contents
 [Description](#Description)
-[Viusuals](#Visuals)
+
+[Visuals](#Visuals)
+
 [Resources](#resources)
 
 # Description
