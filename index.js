@@ -20,41 +20,58 @@ const questions = [
         type: "input", 
         name: "title",
         message: "What is your projects title?", 
+        // validating the users input to make sure they insert something 
+        validate: checkInput
     },
     {
         type: "input", 
         name: "description",
         message: "Describe your project.", 
+        validate: checkInput
+
     },
     {
         type: "input", 
         name: "installation",
         message: "Explain how to install the software",  
+        validate: checkInput
+
     },
     {
         type: "input", 
         name: "usage",
         message: "Describe how you will use the project.", 
+        validate: checkInput
+
     },
     {
-        type: "input", 
+        type: "list", 
         name: "license",
         message: "Select a license for the project.", 
+        choices: ["MIT", "This licesnse", "That license", "Every license"],
+        validate: checkInput
+
     },
     {
         type: "input", 
         name: "contributing",
         message: "Who contributed to the project?", 
+        validate: checkInput
+
     },
     {
         type: "input", 
         name: "tests",
         message: "Enter testing instructions for the project.", 
+        validate: checkInput
+
     },
     {
         type: "input", 
         name: "questions",
         message: "Enter any FAQ.", 
+        validate: checkInput
+
     },
 ];
 
@@ -73,6 +90,7 @@ function init() {
     inquirer.prompt(questions).then((data) => {
         console.log(JSON.stringify(data, null, " "));
         
+
         writeToFile("./generated/README.md", data); 
     });
 
