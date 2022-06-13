@@ -1,32 +1,32 @@
-# Big Project
-  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+# Generated README
+  [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
   ## Table of Contents
-  - [Description](#-Description)
-  - [Installation](#-Installation)
-  - [Usage](#-Usage)
-  - [License](#-License)
-  - [Contributing](#-Contributing)
-  - [Tests](#-Tests)
-  - [Questions](#-Questions)
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributing](#Contributing)
+  - [Tests](#Tests)
+  - [Questions](#Questions??)
 
   ## Description
-  This is a large project with a lot of information on it.
+  This project helps the user create their own README with prompts from the command line.
 
   ## Installation
-  However you would like
+  NPM installer
 
   ## Usage
-  However you would like
+  You can use this for all of your projects, since all projects require a README
 
   ## License
-  Boost Software License
+  BSD 2-Clause
 
   ## Contributing
-  I did
+  Nate Traugh
 
   ## Tests
-  Use any test parameters you would like
+  Test the project however you would like.
 
   ## Questions??
 
