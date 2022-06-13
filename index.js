@@ -4,6 +4,16 @@ const inquirer = require("inquirer");
 const newMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
+
+// function to check if the user has not put in any information
+const checkInput = function(value){
+    if(value != ""){
+        return true;
+    }else {
+        return "Please enter some input."
+    }
+}
+
 const questions = [
     {
         type: "input", 
