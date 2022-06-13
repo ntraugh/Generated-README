@@ -2,74 +2,87 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./generateMarkdown");
-const newMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
 
 // function to check if the user has not put in any information
-const checkInput = function(value){
-    if(value != ""){
+const checkInput = function (value) {
+    if (value != "") {
         return true;
-    }else {
+    } else {
         return "Please enter some input."
     }
 }
 
 const questions = [
     {
-        type: "input", 
+        type: "input",
         name: "title",
-        message: "What is your projects title?", 
+        message: "What is your projects title?",
         // validating the users input to make sure they insert something 
         validate: checkInput
     },
     {
-        type: "input", 
+        type: "input",
         name: "description",
-        message: "Describe your project.", 
+        message: "Describe your project.",
         validate: checkInput
 
     },
     {
-        type: "input", 
+        type: "input",
         name: "installation",
-        message: "Explain how to install the software",  
+        message: "Explain how to install the software.",
         validate: checkInput
 
     },
     {
-        type: "input", 
+        type: "input",
         name: "usage",
-        message: "Describe how you will use the project.", 
+        message: "Describe how you will use the project.",
         validate: checkInput
 
     },
     {
-        type: "list", 
+        type: "list",
         name: "license",
-        message: "Select a license for the project.", 
-        choices: ["MIT", "This licesnse", "That license", "Every license"],
+        message: "Select a license for the project.",
+        choices: ["Apache 2.0", "GNU", "MIT", "BSD 2-Clause", "BSD 3-Clause", "Boost Software License", "Creative Commons", "Eclipse publice License", "Eclipse Public License", "GNU Affero General Public License", "GNU General public License v2.0", "GNU Lesser General public License", "Mozilla Public License 2.0", "The Unlicense"],
         validate: checkInput
 
     },
     {
-        type: "input", 
+        type: "input",
         name: "contributing",
-        message: "Who contributed to the project?", 
+        message: "Who contributed to the project?",
         validate: checkInput
 
     },
     {
-        type: "input", 
+        type: "input",
         name: "tests",
-        message: "Enter testing instructions for the project.", 
+        message: "Enter testing instructions for the project.",
         validate: checkInput
 
     },
     {
-        type: "input", 
-        name: "questions",
-        message: "Enter any FAQ.", 
+        type: "input",
+        name: "concerns",
+        message: "Enter any FAQ.",
+        validate: checkInput
+
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "Enter your GitHub username.",
+        validate: checkInput
+
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Enter your email.",
         validate: checkInput
 
     },
@@ -77,8 +90,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data), function (err){
-        if (err){
+    fs.writeFile(fileName, generateMarkdown(data), function (err) {
+        if (err) {
             return console.log(err);
         }
     });
@@ -89,9 +102,9 @@ function init() {
     // creating a prompt for the questions
     inquirer.prompt(questions).then((data) => {
         console.log(JSON.stringify(data, null, " "));
-        
 
-        writeToFile("./generated/README.md", data); 
+
+        writeToFile("./generated/README.md", data);
     });
 
 };
